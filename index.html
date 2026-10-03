@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | DriveSelect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <header id="siteHeader">
+    <nav class="navbar navbar-expand-md" aria-label="Main navigation">
+      <div class="container">
+        <a class="logo" href="index.html">DriveSelect</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="fleet.html">Fleet</a></li>
+            <li class="nav-item"><a class="nav-link" href="rules.html">Rules</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-dark-ws">My Booking</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Premium vehicles for any journey</h1>
+        <p class="lead text-secondary col-md-6 px-0">
+          Book online instantly. Transparent rates, no hidden fees, and absolute support every mile.
+        </p>
+
+        <form class="search-widget" action="fleet.html">
+          <span class="tag">Find Your Rental</span>
+          <div class="row g-3 align-items-end">
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <label class="form-label fw-semibold" for="pu">Pick-up Location</label>
+              <input type="text" class="form-control" id="pu" placeholder="Airport, city or zip code">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <label class="form-label fw-semibold" for="do">Drop-off Location</label>
+              <input type="text" class="form-control" id="do" placeholder="Same as pick-up">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <label class="form-label fw-semibold" for="pd">Pick-up Date &amp; Time</label>
+              <input type="datetime-local" class="form-control" id="pd">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <label class="form-label fw-semibold" for="dd">Drop-off Date &amp; Time</label>
+              <input type="datetime-local" class="form-control" id="dd">
+            </div>
+          </div>
+          <button class="btn btn-dark-ws mt-3 w-100" type="submit">Search Cars</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="container pt-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">Featured Fleet</h2>
+        <a class="fw-semibold text-secondary" href="fleet.html">View All Fleet &rarr;</a>
+      </div>
+
+      <div class="car-grid">
+
+        <article class="car-card">
+          <img class="car-img" src="imegas/tesla.jpg" alt="Eco Compact Pro" loading="lazy">
+          <h3>Eco Compact Pro</h3>
+          <p class="meta mb-0">Automatic &middot; 5 Seats &middot; Hybrid</p>
+          <div class="car-bottom">
+            <span class="price">$45/day</span>
+            <a href="contact.html" class="btn btn-dark-ws">Reserve</a>
+          </div>
+        </article>
+
+        <article class="car-card">
+          <img class="car-img" src="imegas/fortuner.jpg" alt="Urban Explorer SUV" loading="lazy">
+          <h3>Urban Explorer SUV</h3>
+          <p class="meta mb-0">AWD &middot; 7 Seats &middot; Diesel</p>
+          <div class="car-bottom">
+            <span class="price">$75/day</span>
+            <a href="contact.html" class="btn btn-dark-ws">Reserve</a>
+          </div>
+        </article>
+
+        <article class="car-card">
+          <img class="car-img" src="imegas/f10.jpg" alt="Sleek Executive Sedan" loading="lazy">
+          <h3>Sleek Executive Sedan</h3>
+          <p class="meta mb-0">Automatic &middot; 5 Seats &middot; Premium</p>
+          <div class="car-bottom">
+            <span class="price">$110/day</span>
+            <a href="contact.html" class="btn btn-dark-ws">Reserve</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <p class="logo mb-2">DriveSelect</p>
+          <p class="text-secondary col-md-8 px-0">
+            Reliable car rentals in minutes. Straightforward rules, fair pricing, premium fleet.
+          </p>
+        </div>
+
+        <div class="col-4 col-md-2">
+          <h4>Fleet</h4>
+          <ul class="list-unstyled">
+            <li>SUVs</li>
+            <li>Sedans</li>
+            <li>Luxury</li>
+          </ul>
+        </div>
+
+        <div class="col-4 col-md-2">
+          <h4>Rules</h4>
+          <ul class="list-unstyled">
+            <li><a href="rules.html">Driver Requirements</a></li>
+            <li><a href="rules.html">Insurance tiers</a></li>
+            <li><a href="rules.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-4 col-md-2">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li>support@driveselect.com</li>
+            <li>+1 (555) 0199-281</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between flex-wrap gap-2 border-top pt-3 small text-secondary">
+        <span>&copy; 2026 DriveSelect Inc. All rights reserved.</span>
+        <span>Privacy Policy &nbsp;&middot;&nbsp; Terms of Service</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
