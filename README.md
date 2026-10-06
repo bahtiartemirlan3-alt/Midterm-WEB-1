@@ -11,4 +11,4 @@
 - Media queries: 992px (tablet) and 576px (mobile)
 - Bootstrap 5: grid, utilities, navbar, accordion (FAQ), form controls
 
-**Live link:** _add your GitHub Pages / Netlify URL here_
+
